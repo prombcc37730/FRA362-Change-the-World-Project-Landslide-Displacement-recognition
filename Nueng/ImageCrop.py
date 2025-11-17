@@ -1,5 +1,6 @@
 import cv2
-import numpy as np
+
+# This code use Claude AI to optimize only not generate at all.
 
 path = "Foundation Dataset/Location 1/083142_0831_2025.JPG"
 scale = 0.3
