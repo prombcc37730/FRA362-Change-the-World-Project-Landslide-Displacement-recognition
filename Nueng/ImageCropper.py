@@ -175,7 +175,7 @@ if __name__ == "__main__":
     # Multiple images
     paths = [
         "Foundation Dataset/Location 1/083142_0831_2025.JPG",
-        "Foundation Dataset/Location 1/another_image.JPG"  # Add your second image path
+        "Foundation Dataset/Location 1/101332_0831_2025.JPG"  # Add your second image path
     ]
     
     # Get cropped image, coordinates, and which image was selected
