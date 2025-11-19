@@ -5,7 +5,7 @@ import numpy as np
 # Load input images (grayscale)
 # ---------------------------------------
 imgA = cv2.imread("Foundation Dataset/Location 1/083142_0831_2025.JPG", cv2.IMREAD_GRAYSCALE)
-imgB = cv2.imread("Foundation Dataset/Location 1/101332_0831_2025.JPG", cv2.IMREAD_GRAYSCALE)
+imgB = cv2.imread("Foundation Dataset/Location 1/090432_0904_2025.JPG", cv2.IMREAD_GRAYSCALE)
 
 if imgA is None or imgB is None:
     raise ValueError("Error: Could not load one or both images.")
