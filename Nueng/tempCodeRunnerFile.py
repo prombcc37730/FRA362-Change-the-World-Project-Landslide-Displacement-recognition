@@ -1,1 +1,0 @@
-Foundation Dataset/Location 1/101332_0831_2025.JPG
