@@ -314,7 +314,7 @@ if __name__ == "__main__":
     # Multiple images
     paths = [
         "Foundation Dataset/Location 1/083142_0831_2025.JPG",
-        "Foundation Dataset/Location 1/090432_0904_2025.JPG"
+        "Foundation Dataset/Location 1/132328_0831_2025.JPG"
     ]
     
     # Get all selections
@@ -337,3 +337,5 @@ if __name__ == "__main__":
             print()
     else:
         print("No selections were made.")
+        
+        
