@@ -3,8 +3,8 @@ import numpy as np
 
 # โหลดรูปภาพ
 # ตรวจสอบให้แน่ใจว่า Path ถูกต้องและไฟล์มีอยู่จริง
-img_src = cv2.imread(r"C:\Users\Win10\Documents\GitHub\FRA362-Change-the-World-Project-Landslide-Displacement-recognition\Prom\FRA362 Dataset\L3_2.jpg")
-img_dst = cv2.imread(r"C:\Users\Win10\Documents\GitHub\FRA362-Change-the-World-Project-Landslide-Displacement-recognition\Prom\FRA362 Dataset\L3_1.jpg")
+img_src = cv2.imread(r"/Users/nantapong/Documents/GitHub/FRA362-Change-the-World-Project-Landslide-Displacement-recognition/Prom/perspective/per_flann_result2_12.jpg")
+img_dst = cv2.imread(r"/Users/nantapong/Documents/GitHub/FRA362-Change-the-World-Project-Landslide-Displacement-recognition/Prom/perspective/per_flann_result2_13.jpg")
 
 # แปลงเป็น Grayscale เพื่อใช้กับ SIFT
 img1_gray = cv2.cvtColor(img_src, cv2.COLOR_BGR2GRAY)
@@ -67,7 +67,7 @@ if len(good_matches) > MIN_MATCH_COUNT:
     img_transformed = cv2.warpPerspective(img_src, H, (width, height))
     
     # บันทึกและแสดงผลลัพธ์
-    output_path = r"C:\Users\Win10\Documents\GitHub\FRA362-Change-the-World-Project-Landslide-Displacement-recognition\Prom\perspective\per_flann_result3_12.jpg"
+    output_path = r"/Users/nantapong/Documents/nn.jpg"
     cv2.imwrite(output_path, img_transformed)
     
     print(f"✅ บันทึกภาพผลลัพธ์สำเร็จ ที่: {output_path}")
@@ -83,7 +83,7 @@ if len(good_matches) > MIN_MATCH_COUNT:
                        matchesMask = mask.ravel().tolist(), # ใช้ Mask จาก RANSAC
                        flags = 2)
     img_matches = cv2.drawMatches(img_src, kp1, img_dst, kp2, good_matches, None, **draw_params)
-    #cv2.imshow("Good Matches (FLANN)", img_matches)
+    cv2.imshow("Good Matches (FLANN)", img_matches)
     
     cv2.waitKey(0)
     cv2.destroyAllWindows()

@@ -2,8 +2,8 @@ import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 import cv2
 
-img_transformed = cv2.imread(r"C:\Users\Win10\Documents\GitHub\FRA362-Change-the-World-Project-Landslide-Displacement-recognition\Prom\perspective\per_flann_result3_12.jpg")
-img_dst = cv2.imread(r"C:\Users\Win10\Documents\GitHub\FRA362-Change-the-World-Project-Landslide-Displacement-recognition\Prom\FRA362 Dataset\L3_1.jpg")
+img_transformed = cv2.imread(r"/Users/nantapong/Documents/GitHub/FRA362-Change-the-World-Project-Landslide-Displacement-recognition/Prom/perspective/per_flann_result2_13.jpg")
+img_dst = cv2.imread(r"/Users/nantapong/Documents/GitHub/FRA362-Change-the-World-Project-Landslide-Displacement-recognition/Prom/perspective/per_flann_result2_12.jpg")
 
 
 img_trans_gray = cv2.cvtColor(img_transformed, cv2.COLOR_BGR2GRAY)

@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 
 # โหลดภาพ
-img1 = cv2.imread(r"C:\Users\Win10\Documents\GitHub\FRA362-Change-the-World-Project-Landslide-Displacement-recognition\Prom\FRA362 Dataset\L1_1.jpg")
-img2 = cv2.imread(r"C:\Users\Win10\Documents\GitHub\FRA362-Change-the-World-Project-Landslide-Displacement-recognition\Prom\FRA362 Dataset\L1_7.jpg")
+img1 = cv2.imread(r"/Users/nantapong/Documents/k1.jpg")
+img2 = cv2.imread(r"/Users/nantapong/Documents/kk.jpg")
 
 
 # -----------------------------------------------------
